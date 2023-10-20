@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 int heart = 0;
+char input;
 
 void delay(unsigned int milliseconds) { 
     //a delay function   
@@ -20,19 +21,19 @@ void delayprint(char string[],int milisecond){
     }
 }
 void intro(){
-    char input = '0';
     delayprint("In this game you will play as \"Un\" \n\
 he's a soy milk merchant who's gonna meet \"Kao\" \n\
-Who's a librarian to play this game there will be decisions\n\
+Who's a librarian who's a very delicate person\n\
+to play this game there will be decisions\n\
 that you have to make so choose wisely and try to get \n\
 the information as much as possible the choice will be like this\n\
 Do you under stand how to play?\n\
 (1.type 1 to continue / 2.type 2 to read the intro again)\n", 5);
     while(1){
-        scanf("%c", &input);
-        if(input == '1'){
+        scanf(" %c", &input);
+        if(tolower(input) == '1'){
             break;
-        }else if(input == '2'){
+        }else if(tolower(input) == '2'){
             system("clear");
             intro();
             break;
@@ -41,19 +42,31 @@ Do you under stand how to play?\n\
         }
     }
 }
+void day1(){
+    delayprint("DAY 1\n\
+Kao usually buys soy milks before heading to work.\n\
+Kao: 2 bags of soy milk please.\n\
+Un : Sure thing!\n\
+Kao: Your uncle isn't here today?\n\
+Un look to Kao and said \"Oh my dad? he let me inherit this shop after he's retired!\n\
+After he look to Kao his chest suddenly warm and his heart beating harder.\n\
+Kao: Ah I see! Kao smile", 5);
+}
+
 int main(){
-    printf("Would you like to play intro? (y/n)\n");
     while(1){
-        scanf("%c", &input);
-        if(input == 'y'){
+        printf("Would you like to play intro? (y/n)\n");
+        scanf(" %c", &input);
+        if(tolower(input) == 'y'){
             system("clear");
             intro();
             break;
-        }else if(input == 'n'){
+        }else if(tolower(input) == 'n'){
             system("clear");
             break;
         }else{
-            printf("Please type in your answer\n");
+            system("clear");
         }
     }
+    day1();
 }
