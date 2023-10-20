@@ -28,12 +28,12 @@ to play this game there will be decisions\n\
 that you have to make so choose wisely and try to get \n\
 the information as much as possible the choice will be like this\n\
 Do you under stand how to play?\n\
-(1.type 1 to continue / 2.type 2 to read the intro again)\n", 5);
+([1:type 1 to continue] / [2:type 2 to read the intro again])\n", 2);
     while(1){
         scanf(" %c", &input);
-        if(tolower(input) == '1'){
+        if(input == '1'){
             break;
-        }else if(tolower(input) == '2'){
+        }else if(input == '2'){
             system("clear");
             intro();
             break;
@@ -50,10 +50,14 @@ Un : Sure thing!\n\
 Kao: Your uncle isn't here today?\n\
 Un look to Kao and said \"Oh my dad? he let me inherit this shop after he's retired!\n\
 After he look to Kao his chest suddenly warm and his heart beating harder.\n\
-Kao: Ah I see! Kao smile", 5);
+Kao: Ah I see! Kao smile", 2);
+}
+void day2(){
+
 }
 
 int main(){
+    int gameend = 0;
     while(1){
         printf("Would you like to play intro? (y/n)\n");
         scanf(" %c", &input);
@@ -68,5 +72,26 @@ int main(){
             system("clear");
         }
     }
+    input = 'e';
     day1();
+    while(1){
+        printf("What would you do?\n\
+([1: Ask his name]/[2: Just give him the soy milk])\n");
+        scanf(" %c", &input);
+        if(input == '1'){
+            system("clear");
+            delayprint("Kao and Un Introduce themself their bond has start from now", 2);
+            break;
+        }else if(input == '2'){
+            system("clear");
+            gameend = 1;
+            printf("Bad Ending 1: you two are just customer and a merchant not even trying to flirt him\n");
+            break;
+        }else{
+            system("clear");
+        }
+    }
+    if(!gameend){
+
+    }
 }
