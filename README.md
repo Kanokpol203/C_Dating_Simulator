@@ -1,2 +1,2 @@
-# C_visual
-Visual novel about gay stuff
+# Dating Simulator
+It's gay game
