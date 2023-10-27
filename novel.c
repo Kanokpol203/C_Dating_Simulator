@@ -624,6 +624,8 @@ Kao has been living with Oun and help with his family business, increasing the s
 \n\
 Oun piggyback his son to the table, they all had a wonderful dinner together.\n\
 This is a long journey and there seems to be more.. but what will it be.. only god knows the answer.\n", 2);
+                }else{
+                    printf("Normal Ending - Friendzoned: Oun and Kao is each other best friend until the end.");
                 }
                 break;
             }else if(input == '2'){
