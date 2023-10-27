@@ -141,6 +141,93 @@ void day7(){
     delayprint("\"So where shoud we be going?\" \n\
 Oun asked because he doesn't really have any idea to where they should go out.\n", 2);
 }
+void day8(){
+    delayprint("The day finally arrived.\n\
+It was saturday.\n\
+At the Café, happiness is in the air.\n\
+both of them enjoy the lunch they had.\n\
+after that, they went to have a little walk.\n\
+The flow of time went by so fast both of them don't even realise that its already the evening.\n\
+Its 5:00 pm. both of them were taking a little walk at the town nearby lake.\n\
+The sky aand clouds are beaming with golden shine.\n\
+A nice breeze acompany them.\n\
+They both laid down at a nearby bench, looking up at the sky.\n\
+Kao's eyes are beaming with joy.\n\
+\n\
+\"Today is an amazing day\" Kao said while starring at the glimming water.\n", 2);
+}
+void day8_2(){
+    delayprint("After hearing such words, Kao smiles full of happiness with a blushy cheeks.\n\
+Both of you sit to see the sunset together.\n\
+At 6:00 pm, both of you went back home.\n", 2);
+}
+void day9(){
+    delayprint("Tuesday\n\
+Something is off.\n\
+\n\
+Kao didn't seem to come at the shop.\n\
+\n\
+Usually, Kao will be at the shop for his usual order.\n\
+Even when its weekend, Kao will still be here.\n\
+Its around 8:30 am.\n\
+Not much customer seems to be around here.\n\
+Oun felt a little concerned.\n\
+He prepared Kao usual order and head off on his motorcycle.\n\
+His destination is the library where kao work at.\n\
+Arrived at the place, Oun head in with a bag of youtiao and soy milk in his hand.\n\
+\"I'm sorry sir, you cannot bring food into this area\" said by the librarian at the reception counter.\n\
+She is blocking Oun off from entering.\n\
+\"Oun!\" A sudden familiar shout came from behind the nearby shelf.\n\
+\"Don't mind him, He was a friend of mine\" Kao said the the librarian at the reception counter while walking to Oun.\n\
+\"The library is not openned yet, you should come back later\" Kao said with a little worried look.\n\
+Oun is relieved to see that Kao is fine and all but he still has to do something.\n", 2);
+}
+void day10(){
+    delayprint("From that day on, their relationship seems to be getting better than ever.\n\
+Oun often went to see Kao at the library.\n\
+At the same time, Kao would often go to help Oun sell during the evening.\n\
+They learn about each other.\n\
+Even if there is conflict between each other, they overcome them together through understanding.\n", 2);
+    delayprint("a few time has passed...", 8);
+    delayprint("Its been 3 months.\n\
+\n\
+Oun and Kao is eating out at the Café near the river.\n\
+The water is clear with ducks swimming around.\n\
+\n\
+\"These cakes looks really nice\" Kao excitingly said while looking at the desserts in front of him.\n\
+\n\
+The cake look stunningly beautiful, decorated with sparkling sprinkle.\n\
+Oun thought to himself about the action he wants to do next.\n", 2);
+}
+void day11(){
+    delayprint("They enjoyed the cakes with happy face.\n\
+After they are done, they decided to take a little walk in the nearby street market.\n\
+It seems there is a little event at the market with plenty of carnival games alongside plenty of food booths.\n\
+The sound of children playing alongside the music being played really liven up the atmosphere.\n\
+They enjoy coconut milk ice cream together.\n\
+They enjoy cotton candy together.\n\
+They got to paint the mud sculpture together.\n\
+Both of them enjoyed their time in the market.\n\
+Time weaved in and out until its time for dinner.\n\
+They selected a nearby crab fried rice booth ran by Madam gui.\n\
+The sky is clear with no star in sight, perfect for lighting fireworks.\n\
+\n\
+\"2 plates please maam\" said by Oun.\n\
+\n\
+\"Coming right up!\" enthusiasticly answered by Madam gui.\n\
+\n\
+\"I'm having a really great time today, how about you?\" Kao asked while smiling with eyes full of happiness.\n\
+\n\
+\"Of course! I'm really happy today. By the way, aren't you feeling full? You ate all day.\" Oun replied.\n\
+\n\
+\"Aw come on, didn't you know I always have a place for sweet stuff?\" Kao answered while laughing.\n\
+Both of them talked and giggle along enjoying the scenery of a night sky reflecting on the river.\n\
+To be honest, Today is the day you finally want to confess your feeling for Kao.\n\
+\n\
+\"Kao\"\n\
+\n\
+\"Yes?\"", 2);
+}
 
 int main(){
     int gameend = 0;
@@ -198,7 +285,7 @@ Connection must be made to go further, and you failed to do so.\n");
             printf("([1.give him extra youtiao]/[2.give him extra steamed custard])\n");
             scanf(" %c", &input);
             if(input == '1'){
-                system("clear");
+                heart += 1;
                 delayprint("YOU RECEIVED 1 HEART POINT: KAO THINK YOU ARE KIND\n\
 \"Total is 20 baht sir\" Oun said\n\
 \"Umm.. I think you miscalculate the price\" Kao asked concernedly\n\
@@ -206,11 +293,9 @@ Connection must be made to go further, and you failed to do so.\n");
 \"oh umm.. its fine. I don't really like steamed custard, but thank you for those extra youtiao\" \n\
 Kao said with a considerated smile.\n\
 Oun will remember that kao dislike steamed custard.\n", 2);
-                heart += 1;
                 delay(5000);
                 break;
             }else if(input == '2'){
-                system("clear");
                 delayprint("YOU DIDN'T RECEIVED ANY HEART POINT: KAO DISLIKE STEAMED CUSTARD\n\
 \"oh umm.. its fine. I don't really like steamed custard\" Kao said\n", 2);
                 delay(5000);
@@ -253,7 +338,7 @@ Oun laughs. \"Here is your soy milk, enjoy!\" Oun said delightedly\n\
 \n\
 \"Thank you!\" Kao replied\n\
 \n\
-The conversation they had today was more than enough to lighten the start of their day.", 2);
+The conversation they had today was more than enough to lighten the start of their day.\n", 2);
                 delay(5000);
                 break;
             }else{
@@ -309,6 +394,7 @@ Kao was quite confused why Oun would do that but deeply, he was very happy.\n", 
 Connection must be made to go further. You actually tried, but not hard enough.\n", 2);
                 break;
             }else if(input == '2'){
+                heart += 1;
                 delayprint("\"YOU RECEIVED 1 HEART POINT: KAO IS VERY HAPPY\n\
 \n\
 \"By any chance, do you want to exchange our number?\" Oun asked nervously. \n\
@@ -348,7 +434,7 @@ they couldn't do anything but hide behind their own hands.", 2);
 \n\
 \"Yeah sure\" Oun repiled\n\
 \n\
-\"That settles it then\"", 2);
+\"That settles it then\"\n", 2);
                 break;
             }else{
                 printf("Please type in your answer\n");
@@ -383,11 +469,171 @@ Anxiously asked by Kao\n\
                 heart += 1;
                 delayprint("YOU RECEIVED 1 HEART POINT: KAO IS HAPPY\n\
 \n\
-\"I was thinking about having something sweet too, lets go there\" Kao excitingly answered.", 2);
+\"I was thinking about having something sweet too, lets go there\" Kao excitingly answered.\n", 2);
                 break;
             }else{
                 printf("Please type in your answer\n");
             }
         }
+        delay(5000);
+    }
+    //day 8
+    system("clear");
+    if(!gameend){
+        day8();
+        while(1){
+            printf(" _________________\n\
+|                 |\n\
+| Make the choice |\n\
+|_________________|\n");
+            printf("([1.said \"I'm kinda a little tired\"]/[2.said \"Me too\"]/\n\
+[3.said \"It is amazing, but Its even more amazing to have you here with me\"])\n");
+            if(input == '1'){
+                heart -= 1;
+                printf("YOU LOSE 1 HEART POINT: KAO IS A LITTLE SAD\n");
+                break;
+            }else if(input == '2'){
+                printf("YOU DIDN'T RECEIVED ANY HEART POINT\n");
+                break;
+            }else if(input == '3'){
+                heart += 1;
+                printf("YOU RECEIVED 1 HEART POINT: KAO IS VERY HAPPY\n");
+                break;
+            }else{
+                printf("Please type in your answer\n");
+            }
+        }
+        day8_2();
+        delay(5000);
+    }
+    //day 9
+    system("clear");
+    if(!gameend){
+        day9();
+        while(1){
+            printf(" _________________\n\
+|                 |\n\
+| Make the choice |\n\
+|_________________|\n");
+            printf("([1.hands him the bag with his order]/[2.head back to the shop])\n");
+            if(input == '1'){
+                heart += 1;
+                printf("YOU RECEIVED 1 HEART POINT: KAO FELT EXTREMELY HAPPY\n");
+                delayprint("\"Thank you Oun!\" Kao is very happy to receive it.\n\
+He is working happily the entire day remembering what happened in the morning.\n", 2);
+                break;
+            }else if(input == '2'){
+                printf("YOU DIDN'T RECEIVED ANY HEART POINT\n");
+                break;
+            }else{
+                printf("Please type in your answer\n");
+            }
+        }
+        delay(5000);
+    }
+    system("clear");
+    //day 10
+    if(!gameend){
+        day10();
+        while(1){
+            printf(" _________________\n\
+|                 |\n\
+| Make the choice |\n\
+|_________________|\n");
+            printf("([1.spoonfed Kao Coffee cake]/[2.spoonfed Kao strawberry cake]/[3.do nothing])\n");
+            if(input == '1'){
+                heart -= 1;
+                printf("YOU LOSE 1 HEART POINT: KAO DISLIKE THE BITTERNESS OF COFFEE\n");
+                delayprint("\"Let me feed you\" Oun said before spoonfeeding Kao the coffee cake.\n\
+\n\
+\"Mfhgh..ah..that was kinda bitter\" Kao said while trying to swallow it.\n\
+\"oh um.. Sorry...I didn't know you dislike bitter stuff\" Oun said with a little worried look.\n\
+\"Don't worry, I'm good\" Kao said with a smile while chewing a strawberry cake.\n", 2);
+                break;
+            }else if(input == '2'){
+                heart += 1;
+                printf("YOU RECEIVED 1 HEART POINT: KAO LIKE STRAWBERRIES\n");
+                delayprint("\"Let me feed you\" Oun said before spoonfeeding Kao the Strawberry cake.\n\
+\"Mhmm..this is delicious\" Kao said while chewing it happily.\n\
+Kao seems to like the way you spoonfed him.\n", 2);
+                break;
+            }else if(input == '3'){
+                printf("YOU DIDN'T RECEIVED ANY HEART POINT\n");
+                break;
+            }else{
+                printf("Please type in your answer\n");
+            }
+        }
+        delay(5000);
+    }
+    //day 11
+    system("clear");
+    if(!gameend){
+        day11();
+        while(1){
+            printf(" _________________\n\
+|                 |\n\
+| Make the choice |\n\
+|_________________|\n");
+            printf("([1.Confess your feeling]/[2.do nothing])\n");
+            if(input == '1'){
+                if(heart == 6 || heart == 7){
+                    delayprint("Kao decide to be Oun lover. Kao accept with a happy smile and blushed up face. For Oun, its a very precious moment.\n\
+This is the diary oun decided to write during that time. At present time, Oun is 27 years old.\n", 8);
+                }else if(heart == 8){
+                    delayprint("Kao decide to be Oun lover. he ran to oun and hug him. his face is beaming with joy.\n\
+Oun went back home happily. From now on, they will be living their life together. through love, pain, sadness, happiness, They will be here for each other.", 8);
+                }else if(heart == 9){
+                    delayprint("MAX HEART:\n\
+\n\
+Kao decide to be Oun lover.\n\
+\n\
+he ran to oun and hug him. his face is beaming with joy.\n\
+\n\
+Oun went back home happily.\n\
+\n\
+A few years later....\n\
+\n\
+24th January 2008\n\
+\n\
+\"Oun, what are you reading?\"\n\
+\n\
+\"oh..Its a diary of mine.\"\n\
+\n\
+Oun close the book and put it back into his bag.\n\
+Its their marriage ceremony.\n\
+\n\
+\"Do you take Kao as your lawful wife/husband, to have and to hold, from this day forward,\n\
+for better or for worse, for richer or for poorer, in sickness and in health,\n\
+ to love and cherish until death do you part?\" asked by the priest.\n\
+\n\
+\"Yes\" replied by Oun\n\
+\n\
+\"In the sight of God and these witnesses, I now pronounce you husband and wife! You may now kiss!\"\n\
+\n\
+The hail of applause and cheering rained upon the couple, as they passionately kiss each other.\n\
+Time has passed, but for them it just a moment.\n\
+Kao has been living with Oun and help with his family business, increasing the size and overall quality of soymilk business.\n\
+\"Daddy, what are you reading?\" a small child is questioning.\n\
+\n\
+\"hmm? oh, it's daddy old diary. by the way, what is daddy Kao doing?\" Oun asked\n\
+\n\
+\"Daddy Kao is preparing our dinner in the kitchen.\" replied by Oun and Kao one and only treasure, their son named Arpao.\n\
+\n\
+\"Dinner is ready darling\" Kao voice coming from the kitchen.\n\
+\n\
+Oun piggyback his son to the table, they all had a wonderful dinner together.\n\
+This is a long journey and there seems to be more.. but what will it be.. only god knows the answer.\n", 2);
+                }
+                break;
+            }else if(input == '2'){
+                printf("Normal Ending - Friendzoned: Oun and Kao is each other best friend until the end.");
+                break;
+            }else{
+                printf("Please type in your answer\n");
+            }
+        }
+        delayprint("FIN", 8);
+        delay(5000);
     }
 }
