@@ -256,7 +256,7 @@ int main(){
         printf("([1: Ask the vendor his name]/[2: leave him be])\n");
         scanf(" %c", &input);
         if(input == '1'){
-            delayprint("by the way, may I know your name?\" Oun asked.\n\
+            delayprint("\"by the way, may I know your name?\" Oun asked.\n\
 \"I'm kao\" replied by kao.\n\
 \"My name is Oun, good to know you. here is your order\n", 2);
             delay(5000);
