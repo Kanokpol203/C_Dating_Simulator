@@ -11,6 +11,6 @@ You will Play As Oun Who is an Soymilk vendor Who's happend to meet a man name K
 Oun felt something in his chest when they first met. Is it love? Find out! in Love You From the star
 
 Link to youtube summery(Thai)
-https://youtu.be/nNpxeJom4_k?feature=shared
+[https://youtu.be/nNpxeJom4_k?feature=shared](https://youtu.be/uaJT-fe4RPs)
 # Contributor
 65070001 Khotchakorn Krutvecho, 65070005 Kanokpol Poykham, 65070007 Kanonrat Berkkhunthod, 65070019 Kittipon Siriamornkit
