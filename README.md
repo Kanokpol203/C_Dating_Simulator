@@ -9,3 +9,6 @@ Shall the story commence?
 
 You will Play As Oun Who is an Soymilk vendor Who's happend to meet a man name Kao
 Oun felt something in his chest when they first met. Is it love? Find out! in Love You From the star
+
+Link to youtube summery(Thai)
+https://youtu.be/nNpxeJom4_k?feature=shared
