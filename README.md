@@ -12,3 +12,5 @@ Oun felt something in his chest when they first met. Is it love? Find out! in Lo
 
 Link to youtube summery(Thai)
 https://youtu.be/nNpxeJom4_k?feature=shared
+# Contributor
+65070001 Khotchakorn Krutvecho, 65070005 Kanokpol Poykham, 65070007 Kanonrat Berkkhunthod, 65070019 Kittipon Siriamornkit
