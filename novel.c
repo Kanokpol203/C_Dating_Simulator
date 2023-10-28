@@ -345,7 +345,6 @@ The conversation they had today was more than enough to lighten the start of the
                 printf("Please type in your answer\n");
             }
         }
-        delay(5000);
     }
     system("clear");
     //day 4
